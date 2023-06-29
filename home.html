@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS GAME</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <section id="sectionOne">
+    <div class="container">
+        <div class="wrapper">
+            <div class="content">
+                <h1>Guess Game</h1>
+                <p style="color: skyblue;">Provide your details to play</p>
+            </div>
+            <div class="detailsContent">
+                <div class="detailsContentWrapper">
+                    <!-- <form> -->
+            <div class="details-row">
+                <!--<label for="name">Name:</label>-->
+                    <input type="text" id="name" placeholder="Player Name" class="nick-name">
+                </div>
+                <div class="details-row">
+               <!-- <label for="min-value">Min Guess Value: </label>-->
+                <input type="number" id="min-number" placeholder="choose min-number" class="min-value">
+            </div>
+            <div class="details-row">
+               <!-- <label for="max-value">Max Guess Value:</label>-->
+                <input type="number" id="max-number" placeholder="choose max-number" class="max-value">
+            </div>
+        </div>
+    </div>
+    <div class="setDiv">
+        <ul>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Change Mode</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+    
+            <div class="bottom">
+                <div class="bottomContent">
+                <button type="submit" class="play-btn" onclick="clickLogIn()">Play</button>
+            <!-- </form> -->
+                <p style="font-weight: bolder;">developed by &copy; codeX</p>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+    </section>
+
+        <section id="sectionTwo">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="content">
+                        <p id="getValue"></p>
+                        <p id="user" style="color: white; font-weight: bolder;">score: </p>
+                    </div>
+                    <div class="mainContent">
+                        <div class="mainContentContainer">
+                        <input type="number" placeholder="guess a number" class="user-guess"><br>
+                        <button type="button" class="guess-button">GUESS</button><br><br>
+                        <p id="guessed-no">Guess number is: </p>
+                        <!-- <p>Number of guesses are: </p> -->
+                        <p id="display-guess"></p>
+                        <button type="button">Retry</button>
+                    </div>
+                </div>
+                    </div>
+            </div>
+        </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
