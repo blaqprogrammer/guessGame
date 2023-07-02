@@ -10,7 +10,8 @@ let minValue;
 let maxValue;
 let randomNumber;
 let userGuess;
-let score;
+var score;
+var a;
 
 btnPlayGame.addEventListener("click", e => {
     nickName = nickNameText.value;
@@ -45,12 +46,15 @@ btnPlayGame.addEventListener("click", e => {
             document.getElementById("display-guess").innerHTML = `Congratulations ${nickName} You guessed right`;
             // document.getElementById("user").innerHTML = `score: ${score - 2}`;
 
+          for (score = 0; score <= 20; score += 2) {
             if (userGuess == randomNumber) {
-                document.getElementById("user").innerHTML = `score = ${score + 2}`;
+                document.getElementById("user").innerHTML = `score = ${score += 2}`;
             } else if (userGuess < randomNumber) {
-                document.getElementById("user").innerHTML = `score = ${score - 2}`;
+                document.getElementById("user").innerHTML = `score = ${score -= 2}`;
             } else 
-            document.getElementById("user").innerHTML = `score = ${score - 2}`;
+            document.getElementById("user").innerHTML = `score = ${score -= 2}`;
+          }
+
 
         })
 
